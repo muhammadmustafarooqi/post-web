@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
-<body>
-    
 
-   
+<body>
+
+
+
 
 
     <div class="dashboard-container">
@@ -20,28 +22,36 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
+                <li><a href="#">My Posts</a></li>
             </ul>
         </div>
-        
+
         <!-- Main content -->
         <div class="main-content">
             <header>
-                <h1>Welcome to your Dashboard!</h1>
+                <h1>Welcome!</h1>
                 <button id="logoutBtn">Logout</button>
             </header>
             <div class="content">
-                <h2>Main Content Area</h2>
-                <p>This is the main section of your dashboard where you can add different features and content.</p>
+                <h2>Create a New Post</h2>
+                <p>Type whta you think!</p>
+                <input type="text" id="title" placeholder="Post Title">
+                <textarea id="content" placeholder="Post Content"></textarea>
+                <button id="addPostBtn">Add Post</button>
+                <button id="logoutBtn">DeletePost</button>
             </div>
+            <h2>All Posts</h2>
+            <div id="postContainer"></div>        
         </div>
     </div>
-    
-    
-    
-    
-        
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <script src="../firebase.js" type="module"></script>
-    <script src="dashboard.js" type="module"></script></body>
+
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../firebase.js" type="module"></script>
+    <script src="dashboard.js" type="module"></script>
+</body>
+
 </html>
